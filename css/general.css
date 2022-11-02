@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Merriweather+Sans:wght@400;700&display=swap');
+
+:root {
+  /* COLORS */
+  --main-bkg: #e5e5e5;
+  --font-color-main: #212529;
+  --accent: #9ec700;
+  --shadow: #bad07c;
+
+  /* TYPOGRAPHY */
+  --font-main: 'Merriweather Sans', sans-serif;
+  --font-nav: 'Advent Pro', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: all 0.3s;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-main);
+  color: var(--font-color-main);
+
+  background-color: var(--main-bkg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.centered-container {
+  margin: 0 auto;
+  max-width: 128rem;
+}

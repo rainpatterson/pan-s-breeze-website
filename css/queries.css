@@ -1,0 +1,45 @@
+@media (max-width: 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+
+  .pb__main-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    padding: 3rem 3rem 5rem;
+  }
+
+  .mobile-nav-btn img {
+    width: 3rem;
+  }
+
+  .pb__main-nav--logo {
+    margin: 0 auto;
+  }
+
+  .section-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-primary-heading {
+    font-size: 4rem;
+  }
+
+  .hero-divider {
+    margin: 5rem 0;
+  }
+
+  .hero-text {
+    font-size: 2.4rem;
+  }
+
+  .btn-hero {
+    margin: 0 auto;
+    margin-bottom: 8rem;
+  }
+}
