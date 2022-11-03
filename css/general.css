@@ -28,10 +28,16 @@ html {
   color: var(--font-color-main);
 
   background-color: var(--main-bkg);
+
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .centered-container {

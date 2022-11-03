@@ -13,30 +13,33 @@
   <body>
     <header class="pb__header">
       <nav class="pb__main-nav">
-        <ul>
-          <a class="main-nav-link--home" href="#">Home</a>
-        </ul>
-        <ul>
-          <a class="main-nav-link" href="#">About</a>
-        </ul>
-        <ul>
-          <a class="main-nav-link" href="#">Book</a>
-        </ul>
-        <img class="pb__main-nav--logo" src="img/logo-svg.svg" alt="" />
-        <ul>
-          <a class="main-nav-link" href="#">Gallery</a>
-        </ul>
-        <ul>
-          <a class="main-nav-link" href="#">FAQs</a>
-        </ul>
-        <ul>
-          <a class="main-nav-link" href="#">Contact</a>
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link home-link" href="#">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">About</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Book</a>
+          </li>
+          <img class="pb__main-nav--logo logo-desktop" src="img/logo-svg.svg" alt="" />
+          <li>
+            <a class="main-nav-link" href="#">Gallery</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">FAQs</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#">Contact</a>
+          </li>
         </ul>
       </nav>
 
       <div class="mobile-nav">
         <a class="mobile-nav-btn">
-          <img src="./img/menu-btn.png" alt="" />
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </a>
 
         <img class="pb__main-nav--logo" src="img/logo-svg.svg" alt="" />
@@ -54,14 +57,54 @@
           city, it's an ideal place to enjoy fresh air, peace and quiet.
         </p>
 
-        <a href="#" class="btn-hero">
+        <!-- <a href="#" class="btn-hero">
           <p>Book Now</p>
           <img src="img/Sign_in_squre.svg" alt="" />
-        </a>
+            </a> -->
+    
+  
+        <div class="btn-container">
+          <button>
+            <span class="text">Book Now</span>
+            <div class="icon-container">
+              <div class="icon icon--left">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+              <div class="icon icon--right">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+          </button>
+  
+          <svg style="display: none">
+            <symbol id="arrow-right" viewBox="0 0 20 10">
+              <path
+                d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"
+              ></path>
+            </symbol>
+          </svg>
+        </div>
+        </div>
       </div>
+
       <div class="pb__hero-img">
         <img src="img/Rectangle-5.png" alt="Hero Image" />
       </div>
     </section>
+
+    <script
+      type="modlie"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodlie
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
   </body>
 </html>
