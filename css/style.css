@@ -111,84 +111,113 @@
 
 /* BUTTON */
 
-button {
-  --width: 20rem;
-  --height: 7rem;
-  border: 0;
-  position: relative;
-  min-width: var(--width);
-  min-height: var(--height);
-  border-radius: var(--height);
-  color: var(--font-color-main);
-
-  background: var(--shadow);
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+/* CSS */
+.button-77 {
   align-items: center;
-  margin: 0 1rem;
-
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-button .text,
-button .icon-container {
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--font-color-main);
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: var(--font-nav), sans-serif;
+  font-size: 2.4rem;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 2.5rem;
+  margin: 0;
+  min-height: 6.4rem;
+  outline: none;
+  overflow: visible;
+  padding: 1.9rem 2.6rem;
+  pointer-events: auto;
   position: relative;
-  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+
+  margin-bottom: 8rem;
 }
 
-button .icon-container {
-  --icon-size: 2.5rem;
-  position: relative;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  margin-left: 1.5rem;
-  transition: transform 500ms ease;
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
 }
-button .icon-container .icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: var(--icon-size);
-  height: var(--icon-size);
-  transition: transform 500ms ease, opacity 250ms ease;
+
+.button-77:before,
+.button-77:after {
+  border-radius: 80px;
 }
-button .icon-container .icon--left {
-  transform: translateX(-200%);
-  opacity: 0;
-}
-button .icon-container .icon svg {
-  width: 100%;
-  height: 100%;
-  fill: var(--font-color-main);
-}
-button::after {
+
+.button-77:before {
+  background-color: rgba(158, 199, 0, 0.32);
   content: '';
-  position: absolute;
+  display: block;
+  height: 100%;
   left: 0;
+  overflow: hidden;
+  position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
-  background: var(--accent);
-  border-radius: var(--height);
-  z-index: 1;
-  transition: transform 500ms ease;
+  z-index: -2;
 }
 
-button:hover::after {
-  transform: translateX(65%);
+.button-77:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #bad07c 0, #9fc700 100%);
+  bottom: 4px;
+  content: '';
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
 }
 
-button:hover .icon-container {
-  transform: translateX(35%);
+.button-77:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
 }
 
-button:hover .icon-container .icon--left {
-  transform: translateX(0);
-  opacity: 1;
+.button-77:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    linear-gradient(92.83deg, #bad07c 0, #9fc700 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-77:disabled {
+  cursor: default;
+  opacity: 0.24;
 }
 
 .pb__hero-img img {
