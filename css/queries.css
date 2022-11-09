@@ -1,3 +1,14 @@
+@media (hover: hover) {
+  .footer-link:hover {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .footer-socials a:hover {
+    color: #fff;
+  }
+}
+
 @media (max-width: 26.75em) {
   html {
     font-size: 50%;
@@ -81,7 +92,7 @@
   }
 
   .pb__main-nav--logo {
-    margin: 0 10rem;
+    margin: 0 13rem;
     position: relative;
     z-index: 3;
   }
@@ -112,6 +123,36 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 8rem;
+  }
+
+  .section-features {
+    justify-content: center;
+  }
+
+  .feature-card {
+    max-width: 39rem;
+  }
+
+  .booking-btn {
+    padding: 2.8rem 8rem;
+  }
+
+  .pb__footer {
+    padding: 8rem 5rem;
+  }
+
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  .footer-logo-box {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
   }
 }
 

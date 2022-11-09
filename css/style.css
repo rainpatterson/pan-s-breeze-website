@@ -56,6 +56,7 @@
 
 .pb__hero-intro {
   align-self: center;
+  margin-bottom: 8rem;
 }
 
 .hero-primary-heading {
@@ -79,39 +80,7 @@
   margin-bottom: 6rem;
 }
 
-/* .btn-hero {
-  display: flex;
-  align-items: center;
-  width: 23rem;
-  background-color: var(--accent);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  border: 0.1rem solid var(--font-color-main);
-
-  transition: background-color 0.5s ease-in-out;
-}
-
-.btn-hero:hover {
-  background-color: var(--main-bkg);
-}
-
-.btn-hero p {
-  color: var(--font-color-main);
-  font-size: 2.4rem;
-  letter-spacing: 0.2rem;
-  padding: 1.5rem 1rem;
-  border-radius: 0.4rem;
-  background-color: var(--main-bkg);
-}
-
-.btn-hero img {
-  margin: 0 auto;
-}
- */
-
 /* BUTTON */
-
-/* CSS */
 .button-77 {
   align-items: center;
   appearance: none;
@@ -147,8 +116,6 @@
   width: auto;
   word-break: keep-all;
   z-index: 0;
-
-  margin-bottom: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -224,4 +191,169 @@
   width: 100%;
   border-radius: 4.5rem;
   box-shadow: 0 12rem 7rem -9rem rgba(186, 208, 124, 0.9);
+}
+
+/* FEATURES */
+.section-features {
+  display: flex;
+  gap: 8rem;
+  flex-wrap: wrap;
+
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 8rem; */
+  padding: 0 4rem;
+  padding-bottom: 10rem;
+}
+
+.feature-card {
+  background-color: rgba(229, 229, 229, 0.6);
+  font-size: 1.5rem;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  border-radius: 3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  max-width: 23.9rem;
+}
+
+.feature-card__icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #fff;
+  padding: 0.8rem;
+  background-color: rgba(159, 199, 0, 0.5);
+  border-radius: 50%;
+}
+
+.feature-card:hover {
+  transform: translateY(-1.5rem);
+}
+
+.feature-heading {
+  margin-bottom: 2rem;
+}
+
+/* BOOK NOW */
+
+.booking-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.section-booking {
+  padding: 0 4rem;
+  padding-bottom: 10rem;
+
+  font-size: 1.8rem;
+}
+
+.section-booking-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+
+  flex-wrap: wrap;
+}
+
+.check-out-box,
+.check-in-box {
+  background-color: #eee;
+  border-radius: 3rem;
+  padding: 1.5rem 1rem;
+}
+
+.check-out-box label,
+.check-in-box label {
+  color: #a2a2a2;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-box input {
+  background-color: transparent;
+  font-family: var(--font-main);
+  font-size: 1.8rem;
+  border: none;
+}
+
+.booking-icon {
+  font-size: 3rem;
+}
+
+.booking-btn {
+  padding: 2.8rem 5.5rem;
+}
+
+/* footer */
+
+.pb__footer {
+  background-color: #cdcdcd;
+  padding: 6rem 0;
+  font-size: 1.6rem;
+}
+
+.footer-logo {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  column-gap: 8rem;
+}
+
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-icon {
+  width: 2rem;
+}
+
+.footer__contact-box li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: inherit;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.footer-socials--icon {
+  font-size: 2.5rem;
+}
+
+.footer-socials a {
+  color: inherit;
+  transition: 0.3s;
 }

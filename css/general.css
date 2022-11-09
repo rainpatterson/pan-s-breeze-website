@@ -2,7 +2,7 @@
 
 :root {
   /* COLORS */
-  --main-bkg: #e5e5e5;
+  --main-bkg: rgb(229, 229, 229);
   --font-color-main: #212529;
   --accent: #9fc700;
   --shadow: #bad07c;
