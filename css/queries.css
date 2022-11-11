@@ -146,6 +146,19 @@
     padding: 2.8rem 8rem;
   }
 
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
   .pb__footer {
     padding: 8rem 5rem;
   }
