@@ -41,5 +41,6 @@ ul {
 
 .centered-container {
   margin: 0 auto;
-  max-width: 128rem;
+  max-width: 138rem;
+  padding: 0 4.8rem;
 }

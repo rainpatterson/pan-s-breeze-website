@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pan's Breeze &mdash; overnight accomodation</title>
+    <title>Pan's Breeze &mdash; Overnight asccomodation</title>
+
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./img/icons8-breeze-32.png"
+    />
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,25 +20,27 @@
   <body>
     <header class="pb__header">
       <nav class="pb__main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link home-link" href="#">Home</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#about">About</a>
-          </li>
-          <img
-            class="pb__main-nav--logo logo-desktop"
-            src="img/Pansbreeze-logo.svg"
-            alt=""
-          />
-          <li>
-            <a class="main-nav-link" href="#book">Book</a>
-          </li>
-          <li>
-            <a class="main-nav-link" href="#cta">Contact</a>
-          </li>
-        </ul>
+        <div class="centered-container">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link home-link" href="#">Home</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="#about">About</a>
+            </li>
+            <img
+              class="pb__main-nav--logo logo-desktop"
+              src="img/Pansbreeze-logo.svg"
+              alt=""
+            />
+            <li>
+              <a class="main-nav-link" href="#book">Book</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="#cta">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="mobile-nav">
@@ -45,130 +54,152 @@
     </header>
 
     <main>
-      <section class="section-hero centered-container">
-        <div class="pb__hero-intro">
-          <h1 class="hero-primary-heading">Overnight Accommodation</h1>
+      <section class="section-hero">
+        <div class="centered-container">
+          <div class="hero--grid-container">
+            <div class="pb__hero-intro">
+              <h1 class="hero-primary-heading">Overnight Accommodation</h1>
 
-          <div class="hero-divider"><img src="./img/wave.svg" alt="" /></div>
+              <div class="hero-divider">
+                <img src="./img/wave.svg" alt="" />
+              </div>
 
-          <p class="hero-text">
-            Our cozy retreat is a free-standing semi-detached cottage. Outside
-            the city, it's an ideal place to enjoy fresh air, peace and quiet.
-          </p>
+              <p class="hero-text">
+                Our cozy retreat is a free-standing semi-detached cottage.
+                Outside the city, it's an ideal place to enjoy fresh air, peace
+                and quiet.
+              </p>
 
-          <button class="button-77" role="button">Book Now</button>
-        </div>
+              <button class="button-77" role="button">Book Now</button>
+            </div>
 
-        <div id="pb__slider">
-          <input type="radio" name="slider" id="s1" checked />
-          <input type="radio" name="slider" id="s2" />
-          <input type="radio" name="slider" id="s3" />
-          <input type="radio" name="slider" id="s4" />
-          <input type="radio" name="slider" id="s5" />
+            <div id="pb__slider">
+              <input type="radio" name="slider" id="s1" checked />
+              <input type="radio" name="slider" id="s2" />
+              <input type="radio" name="slider" id="s3" />
+              <input type="radio" name="slider" id="s4" />
+              <input type="radio" name="slider" id="s5" />
 
-          <label for="s1" id="slide1"
-            ><img src="./img/gallery/img1.jpeg" alt=""
-          /></label>
-          <label for="s2" id="slide2"
-            ><img src="./img/gallery/img2.jpeg" alt=""
-          /></label>
-          <label for="s3" id="slide3"
-            ><img src="./img/gallery/img3.jpeg" alt=""
-          /></label>
-          <label for="s4" id="slide4"
-            ><img src="./img/gallery/img4.jpeg" alt=""
-          /></label>
-          <label for="s5" id="slide5"
-            ><img src="./img/gallery/img5.jpeg" alt=""
-          /></label>
-        </div>
+              <label for="s1" id="slide1"
+                ><img src="./img/gallery/img1.jpeg" alt=""
+              /></label>
+              <label for="s2" id="slide2"
+                ><img src="./img/gallery/img2.jpeg" alt=""
+              /></label>
+              <label for="s3" id="slide3"
+                ><img src="./img/gallery/img3.jpeg" alt=""
+              /></label>
+              <label for="s4" id="slide4"
+                ><img src="./img/gallery/img4.jpeg" alt=""
+              /></label>
+              <label for="s5" id="slide5"
+                ><img src="./img/gallery/img5.jpeg" alt=""
+              /></label>
+            </div>
 
-        <!-- <div class="pb__hero-img">
+            <!-- <div class="pb__hero-img">
         <img src="img/Rectangle-5.png" alt="Hero Image" />
       </div> -->
-      </section>
-
-      <section id="about" class="section-features centered-container">
-        <div class="feature-card">
-          <ion-icon class="feature-card__icon" name="earth-outline"></ion-icon>
-          <h3 class="feature-heading">Lorem, ipsum.</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
-            libero alias.
-          </p>
-        </div>
-        <div class="feature-card">
-          <ion-icon class="feature-card__icon" name="leaf-outline"></ion-icon>
-          <h3 class="feature-heading">Lorem, ipsum.</h3>
-          <p class="feature-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            nesciunt minima.
-          </p>
-        </div>
-        <div class="feature-card">
-          <ion-icon
-            class="feature-card__icon"
-            name="cloudy-night-outline"
-          ></ion-icon>
-          <h3 class="feature-heading">Lorem, ipsum.</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            doloribus optio.
-          </p>
-        </div>
-        <div class="feature-card">
-          <ion-icon
-            class="feature-card__icon"
-            name="bonfire-outline"
-          ></ion-icon>
-          <h3 class="feature-heading">Lorem, ipsum.</h3>
-          <p class="feature-text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
-            odio.
-          </p>
+          </div>
         </div>
       </section>
 
-      <section id="book" class="section-booking centered-container">
-        <h2 class="heading-secondary">Check availability</h2>
-        <div class="section-booking-wrapper">
-          <div class="check-in-box">
-            <label for="check-in">Check in date:</label>
-
-            <div class="check-in input-box">
-              <ion-icon class="booking-icon" name="log-in-outline"></ion-icon>
-              <input
-                type="date"
-                id="check-in"
-                name="trip-start"
-                value="2022-11-01"
-                min="2022-01-01"
-                max="2022-12-31"
-              />
+      <section id="about" class="section-features">
+        <div class="centered-container">
+          <div class="features--flex-container">
+            <div class="feature-card">
+              <ion-icon
+                class="feature-card__icon"
+                name="earth-outline"
+              ></ion-icon>
+              <h3 class="feature-heading">Lorem, ipsum.</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore, libero alias.
+              </p>
+            </div>
+            <div class="feature-card">
+              <ion-icon
+                class="feature-card__icon"
+                name="leaf-outline"
+              ></ion-icon>
+              <h3 class="feature-heading">Lorem, ipsum.</h3>
+              <p class="feature-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, nesciunt minima.
+              </p>
+            </div>
+            <div class="feature-card">
+              <ion-icon
+                class="feature-card__icon"
+                name="cloudy-night-outline"
+              ></ion-icon>
+              <h3 class="feature-heading">Lorem, ipsum.</h3>
+              <p class="feature-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, doloribus optio.
+              </p>
+            </div>
+            <div class="feature-card">
+              <ion-icon
+                class="feature-card__icon"
+                name="bonfire-outline"
+              ></ion-icon>
+              <h3 class="feature-heading">Lorem, ipsum.</h3>
+              <p class="feature-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusamus, odio.
+              </p>
             </div>
           </div>
-
-          <div class="check-out-box">
-            <label for="check-in">Check out date:</label>
-
-            <div class="check-out input-box">
-              <ion-icon class="booking-icon" name="log-out-outline"></ion-icon>
-              <input
-                type="date"
-                id="check-out"
-                name="trip-end"
-                value="2022-11-01"
-                min="2022-01-01"
-                max="2022-12-31"
-              />
-            </div>
-          </div>
-
-          <button class="button-77 booking-btn" role="button">Check</button>
         </div>
       </section>
 
-      <section class="section-cta" id="cta">
+      <section id="book" class="section-booking">
+        <div class="centered-container">
+          <h2 class="heading-secondary">Check availability</h2>
+          <div class="section-booking-wrapper">
+            <div class="check-in-box">
+              <label for="check-in">Check in date:</label>
+
+              <div class="check-in input-box">
+                <ion-icon class="booking-icon" name="log-in-outline"></ion-icon>
+                <input
+                  type="date"
+                  id="check-in"
+                  name="trip-start"
+                  value="2022-11-01"
+                  min="2022-01-01"
+                  max="2022-12-31"
+                />
+              </div>
+            </div>
+
+            <div class="check-out-box">
+              <label for="check-in">Check out date:</label>
+
+              <div class="check-out input-box">
+                <ion-icon
+                  class="booking-icon"
+                  name="log-out-outline"
+                ></ion-icon>
+                <input
+                  type="date"
+                  id="check-out"
+                  name="trip-end"
+                  value="2022-11-01"
+                  min="2022-01-01"
+                  max="2022-12-31"
+                />
+              </div>
+            </div>
+
+            <button class="button-77 booking-btn" role="button">Check</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section-cta">
         <div class="centered-container">
           <div class="cta">
             <div class="cta-text-box">

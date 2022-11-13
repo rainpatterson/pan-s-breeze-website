@@ -101,7 +101,7 @@
     display: none;
   }
 
-  .section-hero {
+  .hero--grid-container {
     grid-template-columns: 1fr;
   }
 
@@ -157,6 +157,11 @@
 
   .cta-text-box {
     padding: 3.2rem;
+  }
+
+  .cta-form label {
+    font-size: 1.4rem;
+    margin-bottom: 2.2rem;
   }
 
   .pb__footer {
