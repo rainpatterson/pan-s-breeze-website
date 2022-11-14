@@ -21,7 +21,9 @@
   .mobile-nav {
     display: flex;
     align-items: center;
-    padding: 3rem 3rem 5rem;
+    padding: 6rem 3rem 5rem;
+
+    position: relative;
   }
 
   .icon-mobile-nav {
@@ -92,8 +94,11 @@
   }
 
   .pb__main-nav--logo {
-    margin: 0 13rem;
-    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 3;
   }
 

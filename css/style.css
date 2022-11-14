@@ -4,7 +4,7 @@
   font-family: var(--font-nav);
   max-width: 120rem;
   margin: 0 auto;
-  padding: 4rem 0 3rem;
+  padding: 4rem 0 4rem;
 }
 
 .main-nav-list {
@@ -47,7 +47,7 @@
 
 /* HERO */
 .section-hero {
-  padding-bottom: 8rem;
+  padding: 6rem 0 10rem;
 }
 
 .hero--grid-container {
@@ -193,11 +193,12 @@
 #pb__slider {
   position: relative;
   width: 60%;
-  height: 20vw;
-  margin: 14rem auto;
+  height: 60%;
+  margin: 0rem auto;
   font-family: 'Helvetica Neue', sans-serif;
   perspective: 1400px;
   transform-style: preserve-3d;
+  align-self: center;
 }
 
 input[type='radio'] {
@@ -296,7 +297,7 @@ input[type='radio']:checked {
 /* FEATURES */
 
 .section-features {
-  padding: 6rem 0 8rem;
+  padding: 6rem 0 10rem;
 }
 
 .features--flex-container {
@@ -342,7 +343,7 @@ input[type='radio']:checked {
 /* BOOK NOW */
 
 .section-booking {
-  padding: 6rem 0 8rem;
+  padding: 6rem 0 10rem;
 
   font-size: 1.8rem;
 }
@@ -400,7 +401,7 @@ input[type='radio']:checked {
 /* contact us */
 
 .section-cta {
-  padding: 6rem 0 12rem;
+  padding: 6rem 0 15rem;
 }
 
 .cta {
