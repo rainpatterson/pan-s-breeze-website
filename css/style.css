@@ -26,7 +26,6 @@
   color: var(--font-color-main);
 }
 
-.main-nav-link:hover,
 .main-nav-link:active {
   color: var(--accent);
 }
@@ -36,7 +35,6 @@
   color: var(--accent);
 }
 
-.home-link:hover,
 .home-link:active {
   color: var(--font-color-main);
 }
@@ -156,14 +154,6 @@
   top: 4px;
   transition: all 100ms ease-out;
   z-index: -1;
-}
-
-.button-77:hover:not(:disabled):after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  transition-timing-function: ease-in;
 }
 
 .button-77:active:not(:disabled) {
@@ -302,9 +292,9 @@ input[type='radio']:checked {
 
 .features--flex-container {
   display: flex;
-  gap: 8rem;
+  /* gap: 8rem; */
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 
   /* display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -312,14 +302,16 @@ input[type='radio']:checked {
 }
 
 .feature-card {
+  /* min-width: 25rem; */
   background-color: rgba(229, 229, 229, 0.6);
   font-size: 1.5rem;
-  padding: 3rem 2.5rem;
+  line-height: 1.5;
   text-align: center;
   border-radius: 3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform 0.3s;
   max-width: 23.9rem;
+  padding: 3rem 2.5rem;
 }
 
 .feature-card__icon {
@@ -509,11 +501,6 @@ input[type='radio']:checked {
   padding: 1.2rem;
 }
 
-.btn--form:hover {
-  background-color: #fff;
-  color: var(--font-color-main);
-}
-
 /* footer */
 
 .pb__footer {
@@ -615,10 +602,6 @@ input[type='radio']:checked {
 .instagram .comingsoon {
   opacity: 0;
   transition: opacity 0.5s ease-out;
-}
-
-.instagram:hover .comingsoon {
-  opacity: 1;
 }
 
 .footer-socials a {

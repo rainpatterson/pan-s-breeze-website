@@ -1,11 +1,27 @@
 @media (hover: hover) {
-  .footer-link:hover {
-    color: #fff;
-    border-color: #fff;
+  .main-nav-link:hover {
+    color: var(--accent);
   }
 
-  .footer-socials a:hover {
-    color: #fff;
+  .home-link:hover {
+    color: var(--font-color-main);
+  }
+
+  .button-77:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+  }
+
+  .btn--form:hover {
+    background-color: #fff;
+    color: var(--font-color-main);
+  }
+
+  .instagram:hover .comingsoon {
+    opacity: 1;
   }
 }
 
