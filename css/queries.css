@@ -1,3 +1,12 @@
+/* On smaller screens, decrease text size in gallery */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
 @media (hover: hover) {
   .main-nav-link:hover {
     color: var(--accent);
@@ -150,12 +159,8 @@
     margin-bottom: 8rem;
   }
 
-  #pb__slider {
-    height: 41vw;
-    margin: 32px auto;
-  }
-
-  .section-features {
+  .features--flex-container {
+    gap: 8rem;
     justify-content: center;
   }
 
