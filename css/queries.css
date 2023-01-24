@@ -34,6 +34,8 @@
   }
 }
 
+/* iphone 14 pro max */
+
 @media (max-width: 26.875em) {
   html {
     font-size: 50%;
@@ -165,7 +167,7 @@
   }
 
   .feature-card {
-    max-width: 39rem;
+    max-width: 100%;
   }
 
   .booking-btn {
@@ -191,7 +193,7 @@
   }
 
   .pb__footer {
-    padding: 8rem 5rem;
+    /* padding: 8rem 5rem; */
   }
 
   .grid-footer {
