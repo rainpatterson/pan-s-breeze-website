@@ -286,7 +286,7 @@
                 possible!
               </p>
 
-              <form action="#" class="cta-form">
+              <form action="#" id="ask_us" class="cta-form" netlify>
                 <div>
                   <label for="full-name">Full name</label>
                   <input
@@ -305,6 +305,16 @@
                     placeholder="me@example.com"
                     required
                   />
+                </div>
+
+                <div>
+                  <label for="message">Your message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    form="ask_us"
+                    placeholder="What would you like to ask us about?"
+                  ></textarea>
                 </div>
 
                 <div>
