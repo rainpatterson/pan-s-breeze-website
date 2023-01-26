@@ -513,8 +513,8 @@
 
 .grid-footer {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  column-gap: 8rem;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  column-gap: 25rem;
 }
 
 .footer__contact-box {
@@ -537,8 +537,12 @@
 .footer-link:link,
 .footer-link:visited {
   color: inherit;
-  transition: 0.3s;
+  transition: all 0.3s;
   border-bottom: 1px solid transparent;
+}
+
+.footer-link:active {
+  color: var(--accent);
 }
 
 .footer-nav-box {
@@ -603,5 +607,13 @@
 
 .footer-socials a {
   color: inherit;
-  transition: 0.3s;
+  transition: all 0.3s;
+}
+
+.footer-socials a ion-icon {
+  transition: all 0.3s;
+}
+
+.footer-socials a ion-icon:hover {
+  color: var(--accent);
 }

@@ -29,6 +29,14 @@
     color: var(--font-color-main);
   }
 
+  .footer-link:hover {
+    color: var(--accent);
+  }
+
+  .footer-socials a ion-icon:hover {
+    color: var(--accent);
+  }
+
   .instagram:hover .comingsoon {
     opacity: 1;
   }
@@ -55,6 +63,63 @@
 
   .icon-mobile-nav {
     font-size: 4rem;
+  }
+
+  .nav__checkbox {
+    display: none;
+  }
+
+  .nav__icon {
+    position: relative;
+    margin-top: 1.5rem;
+    z-index: 3;
+  }
+
+  .nav__icon,
+  .nav__icon::before,
+  .nav__icon::after {
+    display: inline-block;
+    width: 3rem;
+    height: 2px;
+    background-color: #444;
+  }
+
+  .nav__icon::before,
+  .nav__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  .nav__icon::before {
+    top: -0.8rem;
+  }
+
+  .nav__icon::after {
+    top: 0.8rem;
+  }
+
+  .nav__button:hover .nav__icon::before {
+    top: -1rem;
+  }
+
+  .nav__button:hover .nav__icon::after {
+    top: 1rem;
+  }
+
+  .nav__checkbox:checked + .nav__button .nav__icon {
+    background-color: transparent;
+  }
+
+  .nav__checkbox:checked + .nav__button .nav__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .nav__checkbox:checked + .nav__button .nav__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 
   .btn-mobile-nav {
@@ -199,7 +264,7 @@
   .grid-footer {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 4rem;
+    row-gap: 6rem;
   }
 
   .footer-logo-box {

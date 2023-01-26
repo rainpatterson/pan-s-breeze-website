@@ -1,4 +1,4 @@
-const btnNavEl = document.querySelector('.mobile-nav-btn');
+const btnNavEl = document.querySelector('.nav__button');
 const headerEl = document.querySelector('.pb__header');
 
 btnNavEl.addEventListener('click', function () {
