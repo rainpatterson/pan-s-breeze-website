@@ -466,7 +466,7 @@
   color: #aaa;
 }
 
-.cta-form div:nth-child(3) {
+.message-container {
   grid-column: 1 / 3;
 }
 
