@@ -235,6 +235,14 @@
     max-width: 100%;
   }
 
+  .feature-heading {
+    font-size: 2.2rem;
+  }
+
+  .feature-text {
+    font-size: 2rem;
+  }
+
   .booking-btn {
     padding: 2.8rem 8rem;
   }
@@ -251,10 +259,17 @@
   .cta-text-box {
     padding: 3.2rem;
   }
+  .cta-text {
+    font-size: 2rem;
+  }
 
   .cta-form label {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 2.2rem;
+  }
+
+  .cta-form select {
+    font-size: 1.3rem;
   }
 
   .pb__footer {
