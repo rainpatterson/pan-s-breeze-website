@@ -268,6 +268,10 @@
     margin-bottom: 2.2rem;
   }
 
+  .cta-form input::placeholder {
+    font-size: 1.4rem;
+  }
+
   .cta-form select {
     font-size: 1.3rem;
   }
