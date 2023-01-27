@@ -42,6 +42,54 @@
   }
 }
 
+/* tablets portrait */
+
+@media (max-width: 56.5625em) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero--grid-container {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+  }
+
+  .features--flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .feature-card {
+    max-width: 100%;
+  }
+
+  /* .feature-card {
+    max-width: 42rem;
+  } */
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .grid-footer {
+    column-gap: 13rem;
+  }
+}
+
+/* @media (max-width: 51.25rem) {
+  .feature-card {
+    max-width: 37rem;
+  }
+ } */
+
 /* iphone 14 pro max */
 
 @media (max-width: 26.875em) {
@@ -204,7 +252,7 @@
 
   .pb__hero-intro {
     text-align: center;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   .hero-primary-heading {
@@ -216,7 +264,7 @@
   }
 
   .hero-text {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .btn-container {
@@ -227,8 +275,8 @@
   }
 
   .features--flex-container {
-    gap: 8rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .feature-card {
