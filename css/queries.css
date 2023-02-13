@@ -40,6 +40,14 @@
   .instagram:hover .comingsoon {
     opacity: 1;
   }
+
+  .nav__button:hover .nav__icon::before {
+    top: -1rem;
+  }
+
+  .nav__button:hover .nav__icon::after {
+    top: 1rem;
+  }
 }
 
 /* tablets portrait */
@@ -115,9 +123,8 @@
 
   .nav__button {
     position: absolute;
-    top: 50%;
+    top: 43%;
     right: 9%;
-    transform: translate(-50%);
   }
 
   .nav__checkbox {
@@ -153,14 +160,6 @@
 
   .nav__icon::after {
     top: 0.8rem;
-  }
-
-  .nav__button:hover .nav__icon::before {
-    top: -1rem;
-  }
-
-  .nav__button:hover .nav__icon::after {
-    top: 1rem;
   }
 
   .nav__checkbox:checked + .nav__button .nav__icon {
