@@ -113,6 +113,12 @@
     font-size: 4rem;
   }
 
+  .nav__button {
+    position: absolute;
+    top: 50%;
+    right: 9%;
+  }
+
   .nav__checkbox {
     display: none;
   }
