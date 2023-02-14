@@ -204,6 +204,8 @@
     pointer-events: none;
 
     visibility: hidden;
+
+    touch-action: none;
   }
 
   .nav-open .pb__main-nav {
