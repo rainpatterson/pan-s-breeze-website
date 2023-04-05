@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#9fc700"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#405000"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script
+      src="https://kit.fontawesome.com/43a081863b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Pan's Breeze &mdash; Overnight accomodation</title>
 
     <link
@@ -86,83 +100,97 @@
               >
             </div>
 
+            <!-- <div class="carousel-container">
+              <i class="fa-solid fa-arrow-left" id="prevBtn"></i>
+              <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
+
+              <div class="carousel-slide">
+                <img src="./img/gallery/img7.JPG" id="lastClone" alt="" />
+                <img src="./img/gallery/img1.jpeg" alt="" />
+                <img src="./img/gallery/img2.jpeg" alt="" />
+                <img src="./img/gallery/img3.jpeg" alt="" />
+                <img src="./img/gallery/img4.jpeg" alt="" />
+                <img src="./img/gallery/img5.jpeg" alt="" />
+                <img src="./img/gallery/img6.JPG" alt="" />
+                <img src="./img/gallery/img7.JPG" alt="" />
+                <img src="./img/gallery/img1.jpeg" id="firstClone" alt="" />
+              </div>
+            </div> -->
+
             <div class="hero-slider">
               <div class="slideshow-container">
                 <div class="mySlides fade">
-                  <div class="numbertext">1 / 7</div>
+                  <!-- <div class="numbertext">1 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img1.jpeg"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Text</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">2 / 7</div>
+                  <!-- <div class="numbertext">2 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img2.jpeg"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Two</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">3 / 7</div>
+                  <!-- <div class="numbertext">3 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img3.jpeg"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">4 / 7</div>
+                  <!-- <div class="numbertext">4 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img4.jpeg"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">5 / 7</div>
+                  <!-- <div class="numbertext">5 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img5.jpeg"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">6 / 7</div>
+                  <!-- <div class="numbertext">6 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img6.JPG"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
 
                 <div class="mySlides fade">
-                  <div class="numbertext">7 / 7</div>
+                  <!-- <div class="numbertext">7 / 7</div> -->
                   <img
                     class="slide-img"
                     src="./img/gallery/img7.JPG"
                     style="width: 100%"
                   />
-                  <!-- <div class="text">Caption Three</div> -->
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <a class="prev" onclick="plusSlides(-1)"
+                  ><i class="fa-solid fa-arrow-left slider-icon"></i
+                ></a>
+                <a class="next" onclick="plusSlides(1)"
+                  ><i class="fa-solid fa-arrow-right slider-icon"></i
+                ></a>
               </div>
               <br />
-
+              <!-- 
               <div style="text-align: center">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -171,15 +199,13 @@
                 <span class="dot" onclick="currentSlide(5)"></span>
                 <span class="dot" onclick="currentSlide(6)"></span>
                 <span class="dot" onclick="currentSlide(7)"></span>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="section-features">
-        <div class="centered-container">
-          <div class="features--flex-container">
             <div class="feature-card">
               <ion-icon
                 class="feature-card__icon"

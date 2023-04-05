@@ -1,11 +1,4 @@
 /* On smaller screens, decrease text size in gallery */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
 
 @media (hover: hover) {
   .main-nav-link:hover {
@@ -22,6 +15,12 @@
     right: 0;
     top: 0;
     transition-timing-function: ease-in;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   .btn--form:hover {
@@ -100,6 +99,23 @@
 
 /* iphone 14 pro max */
 
+@media (max-width: 40em) {
+  .main-nav-list {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 33.75em) {
+  .main-nav-list {
+    gap: 1rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+  }
+}
+
 @media (max-width: 26.875em) {
   html {
     font-size: 50%;
@@ -152,6 +168,7 @@
     position: absolute;
     left: 0;
     transition: all 0.2s;
+    /* animation: h; */
   }
 
   .nav__icon::before {
@@ -162,8 +179,14 @@
     top: 0.8rem;
   }
 
+  .nav-icon {
+  }
+
   .nav__checkbox:checked + .nav__button .nav__icon {
     background-color: transparent;
+    top: 0;
+    animation: h 0.5s 0s;
+    animation-fill-mode: forwards;
   }
 
   .nav__checkbox:checked + .nav__button .nav__icon::before {
@@ -252,10 +275,6 @@
 
   .logo-desktop {
     display: none;
-  }
-
-  .hero--grid-container {
-    grid-template-columns: 1fr;
   }
 
   .pb__hero-intro {
@@ -362,8 +381,8 @@
 }
 
 @media (max-width: 23.4375em) {
-  .pb__main-nav--logo {
-    margin: 0 10rem;
+  html {
+    font-size: 45%;
   }
 
   .hero-primary-heading {
@@ -374,7 +393,43 @@
     font-size: 2.2rem;
   }
 
-  #pb__slider {
-    height: 50vw;
+  .slideshow-container {
+    max-width: 100%;
+  }
+}
+
+@keyframes h {
+  0% {
+    top: 6px;
+    transform: rotate(135deg);
+  }
+
+  45% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes g {
+  0% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  45% {
+    top: 6px;
+    transform: rotate(145deg);
+  }
+
+  75% {
+    transform: rotate(130deg);
+  }
+  100% {
+    transform: rotate(135deg);
   }
 }

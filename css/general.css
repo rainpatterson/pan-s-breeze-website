@@ -2,7 +2,7 @@
 
 :root {
   /* COLORS */
-  --main-bkg: rgb(229, 229, 229);
+  --main-bkg: #e5e5e5;
   --font-color-main: #212529;
   --accent: #9fc700;
   --shadow: #bad07c;
@@ -25,9 +25,11 @@ html {
   font-family: var(--font-main);
   color: var(--font-color-main);
 
-  background-color: var(--main-bkg);
-
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e5e5e5;
 }
 
 a {
